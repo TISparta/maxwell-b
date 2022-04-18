@@ -3,7 +3,7 @@
 # Simple script for starting up maxwell
 
 # Location to store temporary files.
-MAXWELL_SERVER_FILES=/tmp/maxwell-server-files
+export MAXWELL_SERVER_FILES=/tmp/maxwell-server-files
 # Port to use for webserver.
 PORT=9041
 # Number of GPUS per solve.
@@ -12,7 +12,7 @@ NGPUS=1
 # Main directory for Maxwell source code.
 BASEDIR=.
 # Location of Python virtualenv containing Maxwell dependencies.
-PYENV=maxwell-solver-env
+PYENV=venv
 SERVER_DIR=maxwell-server
 PYTHON=python3
 

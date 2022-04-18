@@ -63,6 +63,27 @@ Maxwell can be manually installed. Follow the installation procedure listed in
 `Dockerfile` for the installation procedure. See `./start_maxwell` for an
 example of how to launch Maxwell manually.
 
+```bash
+" Install system packages
+sudo apt-get update
+sudo apt-get install -y python3-pip
+sudo apt-get install -y python3-setuptools 
+sudo apt-get install -y libhdf5-serial-dev 
+sudo apt-get install -y mpich
+
+" Create virtual environment
+python3 -m venv venv/
+
+" Load virtual environment
+source venv/bin/activate
+
+" Install dependencies
+pip3 install -r requirements.txt
+
+" Run program
+bash start_maxwell.sh &
+```
+
 
 Options
 =======
