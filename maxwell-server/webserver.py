@@ -108,7 +108,7 @@ if __name__ == '__main__':
     else:
         port = 9041
 
-    server_address = ("", port)
+    server_address = ("0.0.0.0", port)
     print("Serving at", server_address)
 
     httpd = ThreadingHTTPServer(server_address, MaxwellHandler)
